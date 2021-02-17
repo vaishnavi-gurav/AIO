@@ -97,6 +97,14 @@
         top: -100%;
         padding: 2rem 0;    
 
+        @media only screen and (max-width: $bp-md-mobile){
+            padding: 1.5rem 0;
+        }
+    
+        @media only screen and (max-width: $bp-sm-mobile){
+            padding: 1rem 0;
+        }
+
     }
 
     &:hover{
