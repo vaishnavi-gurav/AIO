@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Aio &mdash; Your All-In-One Booking Website</title>
+</head>
+<body>
+    <!-- Parent Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+                <!-- Website Logo -->
+                <img src="./img/logo.png" alt="AIO Logo" class="logo">
+                <!-- Search Bar and Button -->
+                <form action="#" class="search">
+                    <!-- Search Bar -->
+                    <input type="text" class="search__input" placeholder="Search Hotels">
+                    <!-- Button -->
+                    <button class="search__button">
+                        <!-- SVG Search Icon -->
+                        <svg class="search__icon">
+                            <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>  
+                <!-- End of Search Bar and Button -->
+
+                <!-- User Navigation -->
+                <nav class="user-nav">
+
+                    <!-- Icon-box-1 -->
+                    <div class="user-nav__icon-box">
+                        <!-- SVG for Bookmark -->
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <!-- Notification Text -->
+                        <span class="user-nav__notification">3</span>
+                    </div>
+
+                    <!-- Icon-box-2 -->
+                    <div class="user-nav__icon-box">
+                        <!-- SVG for Bookmark -->
+                        <svg class="user-nav__icon">
+                            <use xlink:href="./img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <!-- Notification Text -->
+                        <span class="user-nav__notification">7</span>
+                    </div>
+
+                    <!-- Profile Picture of the user -->
+                    <div class="user-nav__user">
+                        <img src="./img/my-pic.jpeg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Eshwa</span>
+                    </div>
+                </nav>
+                <!-- End of User Navigation -->
+        </header>
+        <!-- End of Header -->
+
+        <!-- Side Bar and Content Section -->
+        <div class="content">
+
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <ul class="side-nav">
+
+                    <!-- Home SVG Icon Container -->
+                    <li class="side-nav__item  side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+
+                     <!-- Aircraft SVG Icon Container -->
+                     <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-aircraft"></use>
+                            </svg>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+
+                     <!-- Key SVG Icon Container -->
+                     <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Car Rental</span>
+                        </a>
+                    </li>
+
+                     <!-- Home SVG Icon Container -->
+                     <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="./img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">Built by <a href="#" class="footer__link">Eshwa Gadkar</a> </p>
+                    <p class="footer__copyright-text">Original Designer of the website : <a href="#" class="footer__link"> Jonas Schmedtmann</a></p>
+                </div>
+
+            </nav>
+
+            <!-- Content -->
+            <main class="hotel-view">
+                    <!-- Image Gallery -->
+                    <div class="gallery">
+                        <!-- Photo-1 -->
+                        <figure class="gallery__item">
+                            <img class="gallery__photo" src="./img/hotel-1.jpg" alt="Hotel-Image-1">
+                        </figure>
+                        <!-- Photo-2 -->
+                        <figure class="gallery__item">
+                            <img class="gallery__photo" src="./img/hotel-2.jpg" alt="Hotel-Image-2">
+                        </figure>
+                        <!-- Photo-3 -->
+                        <figure class="gallery__item">
+                            <img class="gallery__photo" src="./img/hotel-3.jpg" alt="Hotel-Image-3">
+                        </figure>
+                    </div>
+
+
+                    <!-- Hotel Overview -->
+                    <div class="overview">
+                            <!-- Overview Heading -->
+                            <h1 class="overview__heading">
+                                Hotel Al-Amora
+                            </h1>
+
+                            <!-- Overview Stars -->
+                            <div class="overview__stars">
+                                <!-- Star-Icon-1 -->
+                                <svg class="overview__stars-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <!-- Star-Icon-2 -->
+                                <svg class="overview__stars-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <!-- Star-Icon-3 -->
+                                <svg class="overview__stars-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <!-- Star-Icon-4 -->
+                                <svg class="overview__stars-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <!-- Star-Icon-5 -->
+                                <svg class="overview__stars-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+
+                            <!-- Overview Location -->
+                            <div class="overview__location">
+                                <svg class="overview__location-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Almora, India</button>
+                            </div>
+
+                            <!-- Ratings and Votes -->
+                            <div class="rating">
+                                <div class="rating-average">7.3</div>
+                                <div class="rating-count">316 votes</div>
+                            </div>
+                    </div>
+
+                    <!-- Details Section -->
+                    <div class="detail">
+                        
+                        <!-- Description -->
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis 
+                                ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae 
+                                architecto voluptate.
+                            </p>
+                            <p class="paragraph">
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate
+                                delectus, inventore iure aliquid aliquam.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Near to the Beach</li>
+                                <li class="list__item">Free Airport Shuttle</li>
+                                <li class="list__item">Free Wifi Arena</li>
+                                <li class="list__item">Pets Allowed</li>
+                                <li class="list__item">Breakfast included</li>
+                                <li class="list__item">Also lunch included</li>
+                                <li class="list__item">Self service</li>
+                                <li class="list__item">Perfect for families</li>
+                            </ul>
+
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Joy and 2 more friends of you recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="./img/user-4.jpg" alt="Friend-1" class="recommend__photo">
+                                    <img src="./img/user-5.jpg" alt="Friend-2" class="recommend__photo">
+                                    <img src="./img/user-6.jpg" alt="Friend-3" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Reviews -->   
+                        <figure class="user-reviews">
+                            <!-- Review 1 -->
+                            <figure class="review review-1">
+                                <!-- Review by user 1 -->
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                                </blockquote>
+                                <!-- User Details -->
+                                <figcaption class="review__user">
+                                    <!-- Review User Image -->
+                                    <img src="./img/user-3.jpg" alt="user-1" class="review__photo">
+                                    <!-- Review User Details -->
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Walt Torvalds</p>
+                                        <p class="review__user-date">Feb 14, 2021</p>
+                                    </div>
+                                    <!-- Review user ratings -->
+                                    <div class="review__rating">7.8 </div>
+                                </figcaption>
+                            </figure>
+                            <!-- End of review 1  -->
+
+
+                            <!-- Review 2 -->
+                            <figure class="review review-2">
+                                <!-- Review by user 2 -->
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </blockquote>
+                                <!-- User Details -->
+                                <figcaption class="review__user">
+                                    <!-- Review User Image -->
+                                    <img src="./img/user-2.jpg" alt="user-2" class="review__photo">
+                                    <!-- Review User Details -->
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Mary Barboza</p>
+                                        <p class="review__user-date">Feb 1, 2021</p>
+                                    </div>
+                                    <!-- Review user ratings -->
+                                    <div class="review__rating">8.4</div>
+                                </figcaption>
+                            </figure>
+                            <!-- End of Review 2 -->
+
+                            <!-- Review 3 -->
+                            <figure class="review review-3">
+                                <!-- Review by user 3 -->
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </blockquote>
+                                <!-- User Details -->
+                                <figcaption class="review__user">
+                                    <!-- Review User Image -->
+                                    <img src="./img/user-1.jpg" alt="user-3" class="review__photo">
+                                    <!-- Review User Details -->
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Jack Hilton</p>
+                                        <p class="review__user-date">Jan 25, 2021</p>
+                                    </div>
+                                    <!-- Review user ratings -->
+                                    <div class="review__rating">9.2</div>
+                                </figcaption>
+                            </figure>
+                            <!-- End of Review 2 -->
+
+
+                            <!-- Button Inline with animation -->
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                        </figure>
+                    </div>
+
+                          <!-- CTA -->
+                          <div class="cta">
+                            <h2 class="cta__book-now">We found 3 rooms for your prefered dates.</h2>
+                            
+                            <button class="btn">
+                               <span class="btn__visible">Book now</span>
+                               <span class="btn__invisible"> Only 3 rooms left</span>
+                            </button>
+                        </div>
+
+                <!-- Copy Right and Footer-->
+                <section class="footer">
+
+                    <div class="footer-left">
+                        <p class="footer-left__text">Built by <a href="#" class="footer-left__link">Eshwa Gadkar</a> </p>
+                        <p class="footer-left__text">Original Designer: <a href="#" class="footer-left__link"> Jonas S.</a></p>
+                    </div>
+
+                    <div class="footer-right">
+                        <p class="footer-right__text">&copy; 2021 by AIO. All rights reserved.</p>
+                    </div>
+                </section>  
+            </main>
+        </div>
+    </div>
+</body>
+</html>

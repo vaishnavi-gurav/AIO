@@ -1,0 +1,43 @@
+@keyframes pulsate{
+    
+    0%{
+        transform: scale(1);
+        color: var(--color-dark-grey-1);
+        box-shadow: none;
+    }
+
+    50%{
+        transform: scale(1.05);
+        color: var(--color-primary);
+        box-shadow: 0 1.2rem 1rem rgba(0,0,0,.25);
+    }
+
+    100%{
+        transform: scale(1);
+        color: var(--color-dark-grey-1);
+        box-shadow: none;
+    }
+
+
+}
+
+
+@keyframes pulsate-cta-button{
+        
+    0%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 1.2rem 1rem rgba(0,0,0,.25);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+
+}

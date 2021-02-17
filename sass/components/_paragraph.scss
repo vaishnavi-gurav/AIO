@@ -1,0 +1,16 @@
+/////////////////////////////////////// 
+//// Paragraph
+.paragraph:not(:last-of-type){
+    margin-bottom: 2rem;
+}
+
+.paragraph::after{
+
+    @media only screen and (max-width: $bp-large){
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.";
+    }
+
+    @media only screen and (max-width: $bp-small){
+        content:"";
+    }
+}

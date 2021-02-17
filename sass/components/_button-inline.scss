@@ -1,0 +1,58 @@
+//////////////////////////////////////////////
+////// Button Inline
+
+.btn-inline{
+    border: none;
+    color: var(--color-primary);
+    background-color: transparent;
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s;
+
+
+    @media only screen and(max-width: $bp-large){
+        font-size: 2.3rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-md-mobile){
+        font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bp-sm-mobile){
+        font-size: 1rem;
+    }
+
+
+
+    & span{
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
+    &:hover{
+        color: var(--color-dark-grey-1);
+
+        span{
+            margin-left: 8px;
+        }
+    }
+
+    &:focus{
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+
+}
+
+

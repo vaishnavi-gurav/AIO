@@ -1,0 +1,156 @@
+//////////////////////////////////////////// 
+//// Hotel Overview
+
+.overview{
+
+    display: flex;
+    align-items: center;
+    border-bottom: var(--line);
+    flex-wrap: wrap;
+
+    // justify-content:space-between;
+
+    &__heading{
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile){
+            font-size: 1.6rem;
+            padding: 1.5rem 2rem;
+        }
+
+        @media only screen and (max-width: $bp-md-mobile){
+            font-size: 1.3rem;
+            padding: 1.3rem 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-mobile){
+            font-size: 1rem;
+            padding: 1rem 1.3rem;
+        }
+    }
+
+    &__stars{
+        margin-right: auto;
+       
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-vsm-mobile){
+            margin-right: 0;
+        }
+
+
+         // Testing Purpose
+        // flex: 1;
+        // background-color: darkblue;
+    }
+
+    &__stars-icon{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+
+        @media only screen and (max-width: $bp-md-mobile){
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        @media only screen and (max-width: $bp-sm-mobile){
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &__location{
+        align-self: stretch;
+
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-vsm-mobile){
+            order: 1;
+            flex: 0 0 35%;
+            margin: 3rem 0 1rem 50%;
+            transform: translate(-25%, -50%);
+        }
+        &-icon{
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: var(--color-primary);
+            margin-right: .5rem;
+        }
+    }
+}
+
+
+
+.rating{
+
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-small){
+        padding: 1rem 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-vsm-mobile){
+        flex: 1;
+    }
+
+    
+
+    &-average{  
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-bottom: -5px;
+
+      @media only screen and (max-width: $bp-small){
+        font-size: 1.8rem;
+        margin-bottom: 1px;
+      }
+
+      @media only screen and (max-width: $bp-mobile){
+        font-size: 1.6rem;
+        margin-bottom: 0;
+
+      }
+
+      @media only screen and (max-width: $bp-md-mobile){
+        font-size: 1.4rem;
+      }
+
+  
+    }
+
+
+    &-count{
+         font-size: .9rem;
+         text-transform:uppercase;
+
+         @media only screen and (max-width: $bp-small){
+           font-size: .5rem;
+        }
+
+         @media only screen and (max-width: $bp-mobile){
+            font-size: 1rem;
+          }
+    
+    }
+}

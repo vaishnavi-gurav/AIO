@@ -1,0 +1,113 @@
+///////////////////////////////////////////
+//// Side Footer
+
+.footer__copyright{
+
+    padding: 0.6rem;
+    & > *{
+        text-align: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    & > *:hover{
+       color: var(--color-primary-light);
+    }
+      
+  @media only screen and(max-width: $bp-medium){
+    display: none;
+  }
+
+ 
+}
+
+.footer__link{
+
+    &:link,
+    &:visited{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+///////////////////////////////////////////
+//// Legal Notice
+.legal{
+    display: flex;
+    justify-content: center;
+   
+
+    &__text{
+        color: #fff;
+        padding: 2.5rem 2rem;
+        font-size: 1.5rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,.8)
+    }
+
+
+    @media only screen and(max-width: $bp-largest){
+        margin: 0;
+        display: none;
+    }
+}
+    
+//////////////////////////////////////////////////
+//////////// Copyright & Footer on 900px devices
+// @media only screen and(max-width: $bp-medium){
+
+.footer{
+    
+    font-size: 1.5rem;
+
+    @media only screen and(max-width: $bp-md-mobile){
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    @media only screen and(max-width: $bp-sm-mobile){
+        font-size: .9rem;
+    }
+
+    @media only screen and(max-width: $bp-vsm-mobile){
+        font-size: .6rem;
+    }
+
+    &-left{
+        background-color: var(--color-primary);
+        color:#fff;
+        flex: 1;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__link{
+            color: #fff;
+            
+            &:link,
+            &:visited{
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-right{
+        background-color: var(--color-grey-dark-1);
+        color: var(--color-light-grey-1);
+        flex: 1;
+        padding: 2rem;
+        align-self: stretch;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        margin-top: 3rem;
+    }
+
+}
