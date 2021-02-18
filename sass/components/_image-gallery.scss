@@ -5,6 +5,10 @@
     display: flex;
     position: relative;
 
+    &__item{
+        flex: 1;
+    }
+
     &__photo{
         width: 100%;
         display: block;

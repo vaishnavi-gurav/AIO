@@ -48,7 +48,8 @@ Grey dark 3: #999
 }
 
 ::selection{
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: #fff;
 }
 
 html{
