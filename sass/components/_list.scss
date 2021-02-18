@@ -25,15 +25,15 @@
       
           // Older Browsers
           background-image: url("../img/chevron-thin-right.svg");
-          background-size: cover;
+          background-size: contain;
 
         @supports(-webkit-mask: url()) or (mask:url()){
             //For Modern Browsers: Use Masks
             background-color: var(--color-primary);
             -webkit-mask: url("../img/chevron-thin-right.svg");
-            -webkit-mask-size: cover;
+            -webkit-mask-size: contain;
             mask: url("../img/chevron-thin-right.svg");
-            mask-size: cover;  
+            mask-size: contain;  
             background-image: none;
         }
 
