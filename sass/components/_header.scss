@@ -109,12 +109,63 @@
         background: var(--color-light-grey-2);
     }
 
+    transition: all 5s;
 
     &__icon-box{
         // display: flex;
         // align-items: center;
         position: relative;
+      
+
+        &-1::before{
+            content: "You have bookmarked 3 hotels";
+            position: absolute;
+            top: 5rem;
+            right: -3rem;
+            display: block;
+            width: 234%;
+            background-color: var(--color-primary);
+            color: #fff;
+            outline: none;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 1rem;
+            z-index: 12;
+            opacity: 0;
+            visibility: hidden;
+
+        }
+
+        &-2::after{
+            content: "You have 7 new notifications";
+            position: absolute;
+            top: 5rem;
+            right: -3rem;
+            width: 234%;
+            display: block;
+            background-color: var(--color-primary);
+            color: #fff;
+            outline: none;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 1rem;
+            z-index: 12;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &-1:hover::before{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &-2:hover::after{
+            opacity: 1;
+            visibility: visible;
+        }
     }
+
+  
 
     &__icon{
         height: 2.25rem;
@@ -142,12 +193,58 @@
         
         // display: flex;
         // align-items: center;
+        position: relative;
 
+        
         &-photo{
             height: 4rem;
             border-radius: 50%;
             margin-right: 1rem;
         }
 
+        &-menu{
+            position: absolute;
+            top: 6.8rem;
+            background-color: var(--color-grey-dark-1);
+            color: #fff;
+            z-index: 12;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 1s;
+
+
+        }
+
+        &-menu-item{
+            list-style: none;
+            padding: 2rem;
+
+            & > a{ 
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:nth-child(even){
+                background-color: var(--color-primary);
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+
+
+        &:hover &-menu{
+                opacity: 1;
+                visibility: visible;
+        }
+
     }
+
+
 }
