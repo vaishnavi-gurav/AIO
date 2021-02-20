@@ -8,12 +8,37 @@
     &__item{
         flex: 1;
         position: relative;
+        transition: all 1s;
+        overflow: hidden;
     }
+
+   
 
     &__photo{
         width: 100%;
         display: block;
+        color: rgb(186, 38, 93);
     }
+
+    &__caption{
+        position: absolute;
+        top: 40%;
+        left: 15%;  
+        width: 70%;
+        text-align: center;
+        background-image: linear-gradient(var(--color-primary-light), var(--color-primary-dark));
+        padding: .5rem 1rem;
+        font-size: 1.7rem;
+        color: #fff;
+        opacity: 0;
+    }
+
+    &__item:hover &__caption{
+       animation: caption-animate 1s;
+       opacity: 1;
+    }
+
+
 
     @media only screen and (max-width: $bp-small){
         flex-direction: column;
