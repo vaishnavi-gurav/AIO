@@ -21,23 +21,29 @@
     }
 
     &__caption{
+
         position: absolute;
-        top: 40%;
-        left: 15%;  
-        width: 70%;
-        text-align: center;
-        background-image: linear-gradient(var(--color-primary-light), var(--color-primary-dark));
-        padding: .5rem 1rem;
-        font-size: 1.7rem;
-        color: #fff;
+        top: 0%;
+        left: 0%;  
+        bottom: 0;
+        right: 0;
+
+        background-color: rgba($color: #FF3366, $alpha: .7);
         opacity: 0;
+        font-size: 2.5rem;
+        color: #fff;
+
+        //Centering Caption text
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     &__item:hover &__caption{
        animation: caption-animate 1s;
        opacity: 1;
     }
-
 
 
     @media only screen and (max-width: $bp-small){
